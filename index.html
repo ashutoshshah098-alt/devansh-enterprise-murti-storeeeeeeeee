@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Devansh Enterprise - Murti Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Devansh Enterprise</h1>
+            <nav>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Beautiful Handcrafted Murtis</h2>
+            <p>Bringing divinity to your home. Shop our exquisite collection of murtis.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <div class="products-grid" id="products-list">
+                <!-- Products rendered by app.js -->
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Devansh Enterprise is dedicated to bringing you the finest handcrafted murtis for your home, office, or gifts.
+                We pride ourselves in quality craftsmanship and divine artistry.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close" id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: ₹<span id="cart-total">0</span></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Devansh Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
